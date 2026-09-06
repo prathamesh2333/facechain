@@ -1,0 +1,25 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ONNX models are downloaded on first run (~39 MB)
+models/*.onnx
+
+# runtime output
+data/evidence/*.json
+data/faces/*.npy
+data/faces/*.jpg
+data/faces/index.json
+build/deployments.json
+
+# node / hardhat
+node_modules/
+artifacts/
+cache/
+
+.DS_Store
+.idea/
+.vscode/

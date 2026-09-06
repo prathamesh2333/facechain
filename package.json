@@ -1,0 +1,13 @@
+{
+  "name": "facechain-local-node",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Optional local Ethereum node for FaceChain (CHAIN_MODE=local).",
+  "scripts": {
+    "node": "hardhat node",
+    "ganache": "ganache --port 8545"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0"
+  }
+}
