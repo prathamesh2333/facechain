@@ -1,0 +1,19 @@
+opencv-python>=4.10,<5
+numpy>=1.26
+requests>=2.31
+python-dotenv>=1.0
+Flask>=3.0
+
+web3>=8,<9
+py-solc-x>=2.0
+
+# keccak backend. Must be the pycryptodome one: the alternative (pysha3 /
+# safe-pysha3) is a C extension with no Windows wheels, so it tries to compile
+# and fails unless Visual C++ Build Tools are installed.
+eth-hash[pycryptodome]>=0.7
+
+# The in-process EVM used by CHAIN_MODE=memory.
+# Installed as two plain packages on purpose - the `eth-tester[py-evm]` extra
+# drags in eth-hash[pysha3], which is the exact thing we are avoiding above.
+eth-tester>=0.12.0b2
+py-evm>=0.12.0b2
